@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>India Government Services - Accessible Information</title>
+
+    <meta
+        name="description"
+        content="Accessible information about Indian government services and citizen resources."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="header-top">
+                <div>
+                    <p class="site-label">Government of India</p>
+                    <h1>India Government Services</h1>
+                </div>
+
+                <button
+                    id="increase-font"
+                    class="accessibility-button"
+                    type="button"
+                    aria-label="Increase text size"
+                >
+                    A+
+                </button>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <ul class="navigation">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#information">Information</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main id="main-content">
+
+        <section id="home" class="hero" aria-labelledby="welcome-heading">
+
+            <div class="container">
+
+                <p class="eyebrow">Citizen Information Portal</p>
+
+                <h2 id="welcome-heading">
+                    Access Government Information Easily
+                </h2>
+
+                <p>
+                    Find information about government services, citizen
+                    resources and important public information.
+                </p>
+
+                <a class="primary-button" href="#services">
+                    Explore Services
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section id="services" class="section" aria-labelledby="services-heading">
+
+            <div class="container">
+
+                <h2 id="services-heading">Government Services</h2>
+
+                <p>
+                    Select a service category to learn more.
+                </p>
+
+                <div class="service-grid">
+
+                    <article class="service-card">
+
+                        <h3>Citizen Services</h3>
+
+                        <p>
+                            Access information about important citizen
+                            services and government facilities.
+                        </p>
+
+                        <a href="#information">
+                            Learn about citizen services
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Education</h3>
+
+                        <p>
+                            Find information about education schemes,
+                            scholarships and learning resources.
+                        </p>
+
+                        <a href="#information">
+                            View education information
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Health</h3>
+
+                        <p>
+                            Explore public health information and
+                            government health services.
+                        </p>
+
+                        <a href="#information">
+                            View health information
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>Documents</h3>
+
+                        <p>
+                            Learn about government documents and
+                            citizen documentation services.
+                        </p>
+
+                        <a href="#information">
+                            View document information
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="information"
+            class="section information-section"
+            aria-labelledby="information-heading"
+        >
+
+            <div class="container">
+
+                <h2 id="information-heading">
+                    Important Information
+                </h2>
+
+                <div class="information-box">
+
+                    <h3>Accessibility First</h3>
+
+                    <p>
+                        This page is designed using semantic HTML,
+                        keyboard-friendly navigation, visible focus
+                        indicators and accessible interactive elements.
+                    </p>
+
+                    <ul>
+                        <li>Keyboard navigation is supported.</li>
+                        <li>Headings follow a logical hierarchy.</li>
+                        <li>Links have meaningful text.</li>
+                        <li>Interactive controls have accessible names.</li>
+                        <li>Responsive design supports different screen sizes.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer id="contact" class="site-footer">
+
+        <div class="container">
+
+            <h2>Contact Information</h2>
+
+            <p>
+                This demonstration page is part of an accessibility
+                audit and development project.
+            </p>
+
+            <p>
+                © 2026 India Government Services Accessibility Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

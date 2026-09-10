@@ -1,0 +1,259 @@
+/* Basic reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #1f2937;
+}
+
+
+/* Container */
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+
+/* Skip link */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    padding: 12px 16px;
+    background: #000000;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+
+/* Header */
+
+.site-header {
+    background: #123b66;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-label {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.site-header h1 {
+    margin: 4px 0 0;
+    font-size: 1.8rem;
+}
+
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.navigation a:hover {
+    background: #ffffff;
+    color: #123b66;
+}
+
+
+/* Focus indicators */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 4px solid #ffbf00;
+    outline-offset: 3px;
+}
+
+
+/* Accessibility button */
+
+.accessibility-button {
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    color: #123b66;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Hero */
+
+.hero {
+    background: #e8f1f8;
+    padding: 70px 0;
+}
+
+.eyebrow {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero h2 {
+    max-width: 750px;
+    margin: 10px 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.15rem;
+}
+
+
+/* Buttons */
+
+.primary-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #123b66;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+
+/* Service cards */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.service-card {
+    border: 2px solid #c7d2df;
+    border-radius: 8px;
+    padding: 25px;
+    background: #ffffff;
+}
+
+.service-card h3 {
+    margin-top: 0;
+    font-size: 1.35rem;
+}
+
+.service-card a {
+    color: #123b66;
+    font-weight: bold;
+}
+
+
+/* Information */
+
+.information-section {
+    background: #f4f6f8;
+}
+
+.information-box {
+    border-left: 6px solid #123b66;
+    background: #ffffff;
+    padding: 25px;
+}
+
+.information-box h3 {
+    margin-top: 0;
+}
+
+
+/* Footer */
+
+.site-footer {
+    background: #17202a;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.site-footer h2 {
+    margin-top: 0;
+}
+
+
+/* Larger text mode */
+
+.large-text {
+    font-size: 115%;
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 700px) {
+
+    .header-top {
+        align-items: flex-start;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        width: 100%;
+    }
+
+}
