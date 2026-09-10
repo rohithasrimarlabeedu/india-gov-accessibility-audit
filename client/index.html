@@ -2,615 +2,765 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>India Government Services - Accessible Dashboard</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Accessible dashboard providing information about Indian government services and citizen resources."
+        content="India Government Accessibility Audit Dashboard"
     >
 
-    <link rel="stylesheet" href="style.css">
+    <title>India Government Accessibility Audit</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
-    <a class="skip-link" href="#main-content">
-        Skip to main content
-    </a>
-
+    <!-- HEADER -->
     <header class="site-header">
+        <div class="container header-content">
 
-        <div class="container">
+            <a
+                href="#home"
+                class="logo"
+                aria-label="India Government Accessibility Audit Home"
+            >
+                IndiaGov Audit
+            </a>
 
-            <div class="header-top">
-
-                <div>
-                    <p class="site-label">Government of India</p>
-
-                    <h1>India Government Services</h1>
-                </div>
-
-                <button
-                    id="increase-font"
-                    class="accessibility-button"
-                    type="button"
-                    aria-label="Increase text size"
-                >
-                    A+
-                </button>
-
-            </div>
-
-            <nav aria-label="Main navigation">
-
-                <ul class="navigation">
-
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-
-                    <li>
-                        <a href="#dashboard">Dashboard</a>
-                    </li>
-
-                    <li>
-                        <a href="#information">Information</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-
+            <nav
+                class="main-nav"
+                aria-label="Main navigation"
+            >
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#live-services">Live Data</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#application">Application</a>
+                <a href="#information">Information</a>
             </nav>
 
         </div>
-
     </header>
 
-    <div class="dashboard-layout">
 
-        <aside class="sidebar" aria-label="Sidebar navigation">
+    <!-- MAIN -->
+    <main>
 
+        <!-- HERO -->
+        <section
+            id="home"
+            class="hero"
+        >
             <div class="container">
 
-                <h2>Quick Navigation</h2>
+                <p class="eyebrow">
+                    Digital Accessibility Initiative
+                </p>
 
-                <nav aria-label="Sidebar navigation">
+                <h1>
+                    India Government Accessibility Audit
+                </h1>
 
-                    <ul>
+                <p class="hero-text">
+                    A responsive and accessible dashboard
+                    designed to demonstrate modern web
+                    accessibility, responsive design,
+                    and dynamic JavaScript functionality.
+                </p>
 
-                        <li>
-                            <a href="#home">Dashboard Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#services">Government Services</a>
-                        </li>
-
-                        <li>
-                            <a href="#dashboard">Service Data</a>
-                        </li>
-
-                        <li>
-                            <a href="#application">Application Form</a>
-                        </li>
-
-                        <li>
-                            <a href="#information">Important Information</a>
-                        </li>
-
-                    </ul>
-
-                </nav>
+                <a
+                    href="#live-services"
+                    class="primary-button"
+                >
+                    Explore Live Data
+                </a>
 
             </div>
+        </section>
 
-        </aside>
 
-        <main id="main-content">
+        <!-- SERVICES -->
+        <section
+            id="services"
+            class="section"
+        >
+            <div class="container">
 
-            <section
-                id="home"
-                class="hero"
-                aria-labelledby="welcome-heading"
-            >
-
-                <div class="container">
-
+                <div class="section-heading">
                     <p class="eyebrow">
-                        Citizen Information Portal
-                    </p>
-
-                    <h2 id="welcome-heading">
-                        Access Government Information Easily
-                    </h2>
-
-                    <p>
-                        Find information about government services,
-                        citizen resources and important public information.
-                    </p>
-
-                    <a
-                        class="primary-button"
-                        href="#services"
-                    >
-                        Explore Services
-                    </a>
-
-                </div>
-
-            </section>
-
-            <section
-                id="services"
-                class="section"
-                aria-labelledby="services-heading"
-            >
-
-                <div class="container">
-
-                    <h2 id="services-heading">
                         Government Services
+                    </p>
+
+                    <h2>
+                        Important Citizen Services
                     </h2>
 
                     <p>
-                        Explore major categories of government services.
+                        Access information about common
+                        government services.
                     </p>
-
-                    <div class="service-grid">
-
-                        <article class="service-card">
-
-                            <h3>Citizen Services</h3>
-
-                            <p>
-                                Access information about important citizen
-                                services and government facilities.
-                            </p>
-
-                            <a href="#information">
-                                Learn about citizen services
-                            </a>
-
-                        </article>
-
-                        <article class="service-card">
-
-                            <h3>Education</h3>
-
-                            <p>
-                                Find information about education schemes,
-                                scholarships and learning resources.
-                            </p>
-
-                            <a href="#information">
-                                View education information
-                            </a>
-
-                        </article>
-
-                        <article class="service-card">
-
-                            <h3>Health</h3>
-
-                            <p>
-                                Explore public health information and
-                                government health services.
-                            </p>
-
-                            <a href="#information">
-                                View health information
-                            </a>
-
-                        </article>
-
-                        <article class="service-card">
-
-                            <h3>Documents</h3>
-
-                            <p>
-                                Learn about government documents and
-                                citizen documentation services.
-                            </p>
-
-                            <a href="#information">
-                                View document information
-                            </a>
-
-                        </article>
-
-                    </div>
-
                 </div>
 
-            </section>
 
-            <section
-                id="dashboard"
-                class="section"
-                aria-labelledby="dashboard-heading"
-            >
+                <div class="service-grid">
 
-                <div class="container">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            ♿
+                        </div>
 
-                    <h2 id="dashboard-heading">
-                        Government Service Data
-                    </h2>
-
-                    <p>
-                        Overview of commonly accessed citizen services.
-                    </p>
-
-                    <div class="table-container">
-
-                        <table>
-
-                            <caption>
-                                Government service availability overview
-                            </caption>
-
-                            <thead>
-
-                                <tr>
-
-                                    <th scope="col">
-                                        Service
-                                    </th>
-
-                                    <th scope="col">
-                                        Category
-                                    </th>
-
-                                    <th scope="col">
-                                        Availability
-                                    </th>
-
-                                    <th scope="col">
-                                        Access
-                                    </th>
-
-                                </tr>
-
-                            </thead>
-
-                            <tbody>
-
-                                <tr>
-
-                                    <th scope="row">
-                                        Citizen Services
-                                    </th>
-
-                                    <td>
-                                        Public Services
-                                    </td>
-
-                                    <td>
-                                        Available
-                                    </td>
-
-                                    <td>
-                                        Online
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <th scope="row">
-                                        Education Schemes
-                                    </th>
-
-                                    <td>
-                                        Education
-                                    </td>
-
-                                    <td>
-                                        Available
-                                    </td>
-
-                                    <td>
-                                        Online
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <th scope="row">
-                                        Health Services
-                                    </th>
-
-                                    <td>
-                                        Healthcare
-                                    </td>
-
-                                    <td>
-                                        Available
-                                    </td>
-
-                                    <td>
-                                        Online
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <th scope="row">
-                                        Document Services
-                                    </th>
-
-                                    <td>
-                                        Documentation
-                                    </td>
-
-                                    <td>
-                                        Available
-                                    </td>
-
-                                    <td>
-                                        Online
-                                    </td>
-
-                                </tr>
-
-                            </tbody>
-
-                        </table>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section
-                id="application"
-                class="section"
-                aria-labelledby="application-heading"
-            >
-
-                <div class="container">
-
-                    <h2 id="application-heading">
-                        Citizen Service Application
-                    </h2>
-
-                    <p>
-                        Complete the form below to request general
-                        government service information.
-                    </p>
-
-                    <form id="service-form" novalidate>
-
-                        <fieldset>
-
-                            <legend>
-                                Applicant Information
-                            </legend>
-
-                            <div class="form-group">
-
-                                <label for="full-name">
-                                    Full Name
-                                </label>
-
-                                <input
-                                    type="text"
-                                    id="full-name"
-                                    name="full-name"
-                                    autocomplete="name"
-                                    required
-                                    aria-describedby="name-help"
-                                >
-
-                                <p id="name-help">
-                                    Enter your full name.
-                                </p>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="email">
-                                    Email Address
-                                </label>
-
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    autocomplete="email"
-                                    required
-                                    aria-describedby="email-help"
-                                >
-
-                                <p id="email-help">
-                                    Enter a valid email address.
-                                </p>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="service">
-                                    Select Service
-                                </label>
-
-                                <select
-                                    id="service"
-                                    name="service"
-                                    required
-                                >
-
-                                    <option value="">
-                                        Select a service
-                                    </option>
-
-                                    <option value="citizen">
-                                        Citizen Services
-                                    </option>
-
-                                    <option value="education">
-                                        Education
-                                    </option>
-
-                                    <option value="health">
-                                        Health
-                                    </option>
-
-                                    <option value="documents">
-                                        Documents
-                                    </option>
-
-                                </select>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="message">
-                                    Additional Information
-                                </label>
-
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="5"
-                                    aria-label="Additional information"
-                                    aria-describedby="message-help"
-                                ></textarea>
-
-                                <p id="message-help">
-                                    Provide any additional information
-                                    related to your request.
-                                </p>
-
-                            </div>
-
-                            <button
-                                type="submit"
-                                class="primary-button"
-                            >
-                                Submit Application
-                            </button>
-
-                        </fieldset>
-
-                    </form>
-
-                </div>
-
-            </section>
-
-            <section
-                id="information"
-                class="section information-section"
-                aria-labelledby="information-heading"
-            >
-
-                <div class="container">
-
-                    <h2 id="information-heading">
-                        Important Information
-                    </h2>
-
-                    <article class="information-box">
-
-                        <h3>Accessibility First</h3>
+                        <h3>
+                            Accessibility
+                        </h3>
 
                         <p>
-                            This dashboard is designed using semantic HTML5,
-                            keyboard-friendly navigation, visible focus
-                            indicators and accessible interactive elements.
+                            Learn about accessibility
+                            features implemented in this
+                            dashboard.
                         </p>
-
-                        <ul>
-
-                            <li>
-                                Keyboard navigation is supported.
-                            </li>
-
-                            <li>
-                                Headings follow a logical hierarchy.
-                            </li>
-
-                            <li>
-                                Links have meaningful text.
-                            </li>
-
-                            <li>
-                                Interactive controls have accessible names.
-                            </li>
-
-                            <li>
-                                Form controls have associated labels.
-                            </li>
-
-                            <li>
-                                Tables include captions and header scopes.
-                            </li>
-
-                            <li>
-                                Responsive design supports different screen sizes.
-                            </li>
-
-                        </ul>
 
                         <button
                             id="open-modal"
+                            class="text-button"
                             type="button"
-                            class="secondary-button"
-                            aria-haspopup="dialog"
                         >
-                            Open Accessibility Information
+                            View Guidelines
                         </button>
+                    </article>
+
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            📄
+                        </div>
+
+                        <h3>
+                            Digital Documents
+                        </h3>
+
+                        <p>
+                            Access digital government
+                            information and documents.
+                        </p>
+
+                        <a
+                            href="#information"
+                            class="text-button"
+                        >
+                            View Information
+                        </a>
+                    </article>
+
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            🏛️
+                        </div>
+
+                        <h3>
+                            Citizen Services
+                        </h3>
+
+                        <p>
+                            Explore digital services
+                            available to citizens.
+                        </p>
+
+                        <a
+                            href="#dashboard"
+                            class="text-button"
+                        >
+                            View Dashboard
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- LIVE API DATA -->
+        <section
+            id="live-services"
+            class="section live-data-section"
+        >
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        REST API Integration
+                    </p>
+
+                    <h2>
+                        Live Service Data
+                    </h2>
+
+                    <p>
+                        Product data is loaded dynamically
+                        from a public REST API using
+                        asynchronous JavaScript.
+                    </p>
+                </div>
+
+
+                <!-- CONTROLS -->
+                <div class="data-controls">
+
+                    <div class="control-group">
+
+                        <label
+                            for="search-input"
+                        >
+                            Search services
+                        </label>
+
+                        <input
+                            type="search"
+                            id="search-input"
+                            placeholder="Search..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+                    <div class="control-group">
+
+                        <label
+                            for="category-filter"
+                        >
+                            Category
+                        </label>
+
+                        <select
+                            id="category-filter"
+                        >
+                            <option value="all">
+                                All Categories
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="control-group">
+
+                        <label
+                            for="sort-select"
+                        >
+                            Sort
+                        </label>
+
+                        <select
+                            id="sort-select"
+                        >
+                            <option value="default">
+                                Default
+                            </option>
+
+                            <option value="name-asc">
+                                Name A-Z
+                            </option>
+
+                            <option value="name-desc">
+                                Name Z-A
+                            </option>
+
+                            <option value="price-low">
+                                Price Low-High
+                            </option>
+
+                            <option value="price-high">
+                                Price High-Low
+                            </option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOADING -->
+                <div
+                    id="loading"
+                    class="loading-state"
+                    aria-live="polite"
+                    hidden
+                >
+
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+
+                </div>
+
+
+                <!-- ERROR -->
+                <div
+                    id="error-banner"
+                    class="error-banner"
+                    role="alert"
+                    hidden
+                >
+                    Unable to load live data.
+                    Please try again later.
+                </div>
+
+
+                <!-- PRODUCTS -->
+                <div
+                    id="product-grid"
+                    class="product-grid"
+                    aria-live="polite"
+                >
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DASHBOARD -->
+        <section
+            id="dashboard"
+            class="section"
+        >
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        Audit Dashboard
+                    </p>
+
+                    <h2>
+                        Accessibility Overview
+                    </h2>
+
+                    <p>
+                        Key accessibility areas monitored
+                        by the audit dashboard.
+                    </p>
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <caption>
+                            Accessibility audit overview
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    Area
+                                </th>
+
+                                <th scope="col">
+                                    Status
+                                </th>
+
+                                <th scope="col">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    Keyboard Navigation
+                                </td>
+
+                                <td>
+                                    Passed
+                                </td>
+
+                                <td>
+                                    Interactive elements
+                                    can be reached using
+                                    keyboard navigation.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    Semantic HTML
+                                </td>
+
+                                <td>
+                                    Passed
+                                </td>
+
+                                <td>
+                                    Semantic HTML5 elements
+                                    are used throughout
+                                    the application.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    Responsive Design
+                                </td>
+
+                                <td>
+                                    Passed
+                                </td>
+
+                                <td>
+                                    Layout adapts to mobile,
+                                    tablet and desktop
+                                    screens.
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    API Integration
+                                </td>
+
+                                <td>
+                                    Active
+                                </td>
+
+                                <td>
+                                    Data is loaded
+                                    asynchronously from
+                                    a public REST API.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- APPLICATION FORM -->
+        <section
+            id="application"
+            class="section"
+        >
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        Citizen Application
+                    </p>
+
+                    <h2>
+                        Application Form
+                    </h2>
+
+                    <p>
+                        Submit your details using the
+                        accessible form below.
+                    </p>
+                </div>
+
+
+                <form
+                    id="service-form"
+                    class="application-form"
+                >
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Select Service
+                        </label>
+
+                        <select
+                            id="service"
+                            name="service"
+                            required
+                        >
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option value="documents">
+                                Digital Documents
+                            </option>
+
+                            <option value="accessibility">
+                                Accessibility Support
+                            </option>
+
+                            <option value="citizen">
+                                Citizen Services
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Submit Application
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+
+        <!-- INFORMATION -->
+        <section
+            id="information"
+            class="section"
+        >
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        About This Project
+                    </p>
+
+                    <h2>
+                        Accessibility Information
+                    </h2>
+                </div>
+
+
+                <div class="information-grid">
+
+                    <article class="information-card">
+
+                        <h3>
+                            Semantic Structure
+                        </h3>
+
+                        <p>
+                            The application uses semantic
+                            HTML5 elements such as header,
+                            navigation, main, section,
+                            article and footer.
+                        </p>
+
+                    </article>
+
+
+                    <article class="information-card">
+
+                        <h3>
+                            Keyboard Support
+                        </h3>
+
+                        <p>
+                            Interactive controls are
+                            designed to be accessible
+                            using keyboard navigation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="information-card">
+
+                        <h3>
+                            Dynamic JavaScript
+                        </h3>
+
+                        <p>
+                            Live API data, search,
+                            filtering and sorting are
+                            handled without reloading
+                            the page.
+                        </p>
+
+                    </article>
+
+
+                    <article class="information-card">
+
+                        <h3>
+                            Local Storage
+                        </h3>
+
+                        <p>
+                            Client-side preferences and
+                            saved items are stored using
+                            browser localStorage.
+                        </p>
+
+                    </article>
+
+
+                    <article class="information-card">
+
+                        <h3>
+                            Responsive Design
+                        </h3>
+
+                        <p>
+                            The interface is designed for
+                            mobile, tablet and desktop
+                            screen sizes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="information-card">
+
+                        <h3>
+                            Accessibility Testing
+                        </h3>
+
+                        <p>
+                            The project is tested using
+                            Lighthouse and accessibility
+                            best practices.
+                        </p>
 
                     </article>
 
                 </div>
 
-            </section>
 
-        </main>
+                <div class="preference-box">
 
-    </div>
+                    <h3>
+                        Accessibility Preferences
+                    </h3>
 
+                    <p>
+                        Increase the font size if you
+                        need larger text.
+                    </p>
+
+                    <button
+                        id="increase-font"
+                        type="button"
+                        class="secondary-button"
+                    >
+                        Increase Font Size
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 India Government Accessibility
+                Audit
+            </p>
+
+            <p>
+                Built with HTML, CSS and JavaScript.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ACCESSIBILITY INFORMATION MODAL -->
     <div
         id="accessibility-modal"
         class="modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
-        aria-describedby="modal-description"
         hidden
     >
 
-        <div class="modal-content">
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+        >
+
+            <button
+                id="close-modal"
+                class="modal-close"
+                type="button"
+                aria-label="Close Accessibility Information"
+            >
+                ×
+            </button>
+
 
             <h2 id="modal-title">
                 Accessibility Information
             </h2>
 
-            <p id="modal-description">
-                This dashboard follows semantic HTML5 structure and
-                accessibility practices to support keyboard and
-                assistive technology users.
+
+            <p>
+                This dashboard follows semantic HTML5
+                structure and accessibility practices
+                to support keyboard and assistive
+                technology users.
             </p>
+
 
             <ul>
 
                 <li>
-                    Semantic HTML5 elements are used throughout the page.
+                    Semantic HTML5 elements are used
+                    throughout the page.
                 </li>
 
                 <li>
@@ -618,7 +768,8 @@
                 </li>
 
                 <li>
-                    Navigation can be accessed using the keyboard.
+                    Navigation can be accessed using
+                    the keyboard.
                 </li>
 
                 <li>
@@ -626,50 +777,37 @@
                 </li>
 
                 <li>
-                    Interactive controls have accessible names.
+                    Interactive controls have accessible
+                    names.
+                </li>
+
+                <li>
+                    Live API data is loaded using
+                    asynchronous JavaScript.
+                </li>
+
+                <li>
+                    Search, filtering and sorting update
+                    the DOM without page reloads.
+                </li>
+
+                <li>
+                    User preferences are stored using
+                    localStorage.
                 </li>
 
             </ul>
-
-            <button
-                id="close-modal"
-                type="button"
-                class="primary-button"
-            >
-                Close Dialog
-            </button>
 
         </div>
 
     </div>
 
-    <footer
-        id="contact"
-        class="site-footer"
-    >
 
-        <div class="container">
-
-            <h2>Contact Information</h2>
-
-            <p>
-                This demonstration page is part of an accessibility
-                audit and development project.
-            </p>
-
-            <address>
-                India Government Services Accessibility Project
-            </address>
-
-            <p>
-                &copy; 2026 India Government Services Accessibility Project
-            </p>
-
-        </div>
-
-    </footer>
-
-    <script src="script.js"></script>
+    <!-- JAVASCRIPT -->
+    <script
+        type="module"
+        src="app.js"
+    ></script>
 
 </body>
 </html>
