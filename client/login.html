@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GovAccess | Login</title>
+
+    <link rel="stylesheet" href="capstone.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-container">
+
+        <section class="auth-card" aria-labelledby="login-title">
+
+            <div class="brand">
+                <div class="brand-icon">🇮🇳</div>
+
+                <h1 id="login-title">
+                    GovAccess
+                </h1>
+
+                <p>
+                    Government Services Portal
+                </p>
+            </div>
+
+            <form id="login-form">
+
+                <div class="form-group">
+                    <label for="login-name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="login-name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                        autocomplete="name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="login-email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
+                    Sign In
+                </button>
+
+            </form>
+
+            <p
+                id="login-error"
+                class="error-message"
+                role="alert"
+                hidden
+            ></p>
+
+            <p class="demo-note">
+                Demo authentication for capstone project
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+        const form = document.getElementById("login-form");
+        const error = document.getElementById("login-error");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name =
+                document.getElementById("login-name").value.trim();
+
+            const email =
+                document.getElementById("login-email").value.trim();
+
+            if (!name || !email) {
+                error.textContent =
+                    "Please enter your name and email.";
+                error.hidden = false;
+                return;
+            }
+
+            const user = {
+                name: name,
+                email: email,
+                loginTime: new Date().toISOString()
+            };
+
+            localStorage.setItem(
+                "capstoneUser",
+                JSON.stringify(user)
+            );
+
+            window.location.href = "dashboard.html";
+        });
+    </script>
+
+</body>
+</html>

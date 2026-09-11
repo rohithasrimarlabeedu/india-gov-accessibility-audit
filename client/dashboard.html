@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="GovAccess Government Services Management Dashboard"
+    >
+
+    <title>GovAccess | Dashboard</title>
+
+    <link rel="stylesheet" href="capstone.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="container topbar-content">
+
+        <a
+            href="dashboard.html"
+            class="logo"
+            aria-label="GovAccess Home"
+        >
+            🇮🇳 GovAccess
+        </a>
+
+        <div class="user-area">
+
+            <span id="user-name">
+                Guest
+            </span>
+
+            <button
+                id="logout-button"
+                class="logout-button"
+                type="button"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="hero-section">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Government Digital Services
+        </span>
+
+        <h1>
+            Government Services Dashboard
+        </h1>
+
+        <p>
+            Discover, search and manage essential government
+            services through one accessible digital portal.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <h2>Service Catalog</h2>
+
+                <p>
+                    Search and manage government services.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="controls">
+
+            <div class="control-group">
+
+                <label for="capstone-search">
+                    Search services
+                </label>
+
+                <input
+                    type="search"
+                    id="capstone-search"
+                    placeholder="Search by service name..."
+                >
+
+            </div>
+
+
+            <div class="control-group">
+
+                <label for="capstone-category">
+                    Category
+                </label>
+
+                <select id="capstone-category">
+                    <option value="All">
+                        All Categories
+                    </option>
+                </select>
+
+            </div>
+
+
+            <div class="control-group">
+
+                <label for="capstone-sort">
+                    Sort
+                </label>
+
+                <select id="capstone-sort">
+
+                    <option value="default">
+                        Default
+                    </option>
+
+                    <option value="name-asc">
+                        Name A-Z
+                    </option>
+
+                    <option value="name-desc">
+                        Name Z-A
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="service-grid"
+            class="service-grid"
+            aria-live="polite"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<section class="management-section">
+
+    <div class="container">
+
+        <div class="management-card">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Add Government Service</h2>
+
+                    <p>
+                        Create a new service in the catalog.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form id="service-form">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="service-name">
+                            Service Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="service-name"
+                            placeholder="Example: Birth Certificate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service-category">
+                            Category
+                        </label>
+
+                        <input
+                            type="text"
+                            id="service-category"
+                            placeholder="Example: Documents"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="service-description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="service-description"
+                        rows="4"
+                        placeholder="Describe the service..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
+                    Add Service
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="features-section">
+
+    <div class="container">
+
+        <h2>
+            Capstone Features
+        </h2>
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+                <span>🔐</span>
+                <h3>Authentication</h3>
+                <p>
+                    Simulated user authentication with
+                    persistent login state.
+                </p>
+            </article>
+
+
+            <article class="feature-card">
+                <span>⚙️</span>
+                <h3>CRUD Operations</h3>
+                <p>
+                    Add, edit and delete services dynamically.
+                </p>
+            </article>
+
+
+            <article class="feature-card">
+                <span>💾</span>
+                <h3>Persistent State</h3>
+                <p>
+                    Service changes are stored using
+                    browser localStorage.
+                </p>
+            </article>
+
+
+            <article class="feature-card">
+                <span>♿</span>
+                <h3>Accessible Design</h3>
+                <p>
+                    Responsive and accessibility-focused
+                    interface.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 GovAccess Government Services Portal
+        </p>
+
+        <p>
+            Production Capstone Project
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script type="module">
+
+    import "./capstone.js";
+
+    const user =
+        JSON.parse(
+            localStorage.getItem("capstoneUser")
+        );
+
+    if (!user) {
+        window.location.href = "login.html";
+    } else {
+        document.getElementById("user-name").textContent =
+            `Welcome, ${user.name}`;
+    }
+
+
+    document
+        .getElementById("logout-button")
+        .addEventListener("click", function() {
+
+            localStorage.removeItem("capstoneUser");
+
+            window.location.href = "login.html";
+
+        });
+
+</script>
+
+</body>
+</html>
