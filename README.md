@@ -4,7 +4,7 @@ A responsive and accessibility-focused Government Services Portal developed as a
 
 ## 🚀 Live Demo
 
-Live deployment: Coming soon
+Live Demo: https://india-gov-accessibility-audit.vercel.app/
 
 ## 📂 GitHub Repository
 
